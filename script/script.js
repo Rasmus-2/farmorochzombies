@@ -179,14 +179,26 @@ function gameOver() {
     gameOverTitle.innerHTML = "GAME OVER"
 
     let scoreTag = document.createElement("p")
-    scoreTag.innerHTML = "Cats saved: "
     scoreTag.id = "scoretag"
     let finalScore = document.createElement("span")
-    finalScore.innerHTML = catsSaved
-    scoreTag.appendChild(finalScore)
+
+    if (catsSaved == 0) {
+        scoreTag.innerHTML = "Du hittade inte farmor den här gången tyvärr. Försök gärna igen"
+    }
+    else {
+        scoreTag.innerHTML = "Du hittade farmor: "
+        finalScore.innerHTML = catsSaved
+        scoreTag.appendChild(finalScore)
+    }
+    if (catsSaved == 1) {
+        scoreTag.innerHTML += " gång"
+    }
+    else if(catsSaved > 1){
+        scoreTag.innerHTML += " gånger"
+    }
 
     let restartButton = document.createElement("a")
-    restartButton.innerHTML = "Try again?"
+    restartButton.innerHTML = "Försök igen?"
     restartButton.href = "index.html"
 
     body.appendChild(gameOverTitle)
