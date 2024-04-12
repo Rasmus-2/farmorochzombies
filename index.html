@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats and Zombies</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body id="body">
+    <main>
+        <div id="information">
+            <div id="graphics">
+                <img id="locationimage" alt="landscape image">
+            </div>
+
+            <div id="info">
+                <p id="eventinfo"></p>
+                <p id="stats">Liv: <span id="lives"></span> Hittat farmor: <span id="catssaved"></span> gånger</p>
+                <!--<p id="coordinatesinfo">Player X: <span id="playerX"></span>; Player Y: <span id="playerY"></span></p>
+            <p id="zombiecoordinatesinfo">Zombie X: <span id="zombieX"></span>; Zombie Y: <span id="zombieY"></span></p>
+            <p id="catcoordinatesinfo">Cat X: <span id="catX"></span>; Cat Y: <span id="catY"></span></p>
+            -->
+            </div>
+
+            <!--<div id="catnoise">
+                <p id="catnoisetext">Cat sounds: <span id="catnoiseinfo"></span></p>
+            </div>-->
+        </div>
+
+        <div id="movement">
+            <div id="controls">
+                <button id="north" onclick="goNorth()">NORR</button>
+                <button id="west" onclick="goWest()">VÄSTER</button>
+                <button id="east" onclick="goEast()">ÖSTER</button>
+                <button id="south" onclick="goSouth()">SÖDER</button>
+            </div>
+
+            <div id="map">
+            </div>
+        </div>
+
+        <div id="quotesdiv"></div>
+
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
